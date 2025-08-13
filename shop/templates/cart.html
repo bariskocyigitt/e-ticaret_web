@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Sepet</h1>
+{% if items %}
+<table class="table">
+  <thead><tr><th>Ürün</th><th>Adet</th><th>Birim</th><th>Toplam</th><th></th></tr></thead>
+  <tbody>
+    {% for i in items %}
+      <tr>
+        <td><a href="/shop/products/{{ i.product.slug }}/">{{ i.product.title }}</a></td>
+        <td>{{ i.qty }}</td>
+        <td>{{ i.unit_price }} ₺</td>
+        <td>{{ i.line_total }} ₺</td>
+        <td><a class="btn btn-sm btn-outline-danger" href="/shop/cart/remove/{{ i.product.slug }}/">Sil</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p class="fw-bold">Ara toplam: {{ subtotal }} ₺</p>
+<a class="btn btn-primary" href="/shop/checkout/">Satın al</a>
+{% else %}
+<p>Sepet boş.</p>
+{% endif %}
+{% endblock %}

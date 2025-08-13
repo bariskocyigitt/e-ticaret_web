@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Ürünler</h1>
+<div class="row g-3">
+  {% for p in products %}
+  <div class="col-md-3">
+    <div class="card h-100">
+      {% if p.image_url %}<img class="card-img-top" src="{{ p.image_url }}" alt="" />{% endif %}
+      <div class="card-body">
+        <h6 class="card-title">{{ p.title }}</h6>
+        <p class="text-muted">{{ p.price }} ₺</p>
+        <a class="btn btn-sm btn-outline-primary" href="/shop/products/{{ p.slug }}/">İncele</a>
+      </div>
+    </div>
+  </div>
+  {% empty %}<p>Ürün bulunamadı.</p>{% endfor %}
+</div>
+{% endblock %}

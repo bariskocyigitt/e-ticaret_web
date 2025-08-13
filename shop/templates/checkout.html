@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Ödeme</h1>
+<p>Demo amaçlı gerçek ödeme yok; formu gönderince sipariş oluşturulur.</p>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-success">Siparişi tamamla</button>
+</form>
+{% endblock %}

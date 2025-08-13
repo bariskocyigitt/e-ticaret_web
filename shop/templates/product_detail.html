@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p class="text-muted">{{ object.price }} ₺ • Stok: {{ object.stock }}</p>
+<p>{{ object.description }}</p>
+<form method="post" action="/shop/cart/add/{{ object.slug }}/">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-success">Sepete ekle</button>
+</form>
+{% endblock %}

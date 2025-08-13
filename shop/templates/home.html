@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Hoş geldin</h1>
+<p>Yeni ürünler</p>
+<div class="row g-3">
+  {% for p in products %}
+  <div class="col-md-4">
+    <div class="card h-100">
+      {% if p.image_url %}<img class="card-img-top" src="{{ p.image_url }}" alt="" />{% endif %}
+      <div class="card-body">
+        <h5 class="card-title">{{ p.title }}</h5>
+        <p class="card-text text-muted">{{ p.price }} ₺</p>
+        <a href="/shop/products/{{ p.slug }}/" class="btn btn-primary">Görüntüle</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
