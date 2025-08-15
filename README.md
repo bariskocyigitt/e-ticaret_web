@@ -10,7 +10,7 @@
 ![Sepet](screenshots/ms_sepet.png)
 
 ### Kayıt Ol
-![Kayıt Ol](screenshots/MS_kayıtolma.png)
+![Kayıt Ol](screenshots/ms_kayıtolma.png)
 
 🛍️ MiniShop — Django ile Basit E-Ticaret
 
