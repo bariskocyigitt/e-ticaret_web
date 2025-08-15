@@ -1,3 +1,17 @@
+## 📸 Ekran Görüntüleri
+
+### Ana sayfa
+![Ana sayfa](screenshots/Minishop_anasayfa.png)
+
+### Ürünler
+![Ürünler](screenshots/MS_urunler.png)
+
+### Sepet
+![Sepet](screenshots/ms_sepet.png)
+
+### Kayıt Ol
+![Kayıt Ol](screenshots/ms_kayıtolma.png)
+
 🛍️ MiniShop — Django ile Basit E-Ticaret
 
 
