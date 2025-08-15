@@ -12,6 +12,10 @@
 ### Kayıt Ol
 ![Kayıt Ol](screenshots/ms_kayıtolma.png)
 
+### Admın Yonetım Sayfası
+![Yonetım](screenshots/Admın_yontm.png)
+
+
 🛍️ MiniShop — Django ile Basit E-Ticaret
 
 
