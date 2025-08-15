@@ -85,7 +85,7 @@ STATICFILES_DIRS = [BASE_DIR / "static"]       # /static/ için kaynak klasörle
 STATIC_ROOT = BASE_DIR / "staticfiles"         # collectstatic hedefi (deploy)
 
 # === Auth redirects ===
-LOGIN_URL = "login"
+LOGIN_URL = "signup"
 LOGIN_REDIRECT_URL = "orders"
 LOGOUT_REDIRECT_URL = "home"
 
